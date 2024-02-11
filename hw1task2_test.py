@@ -1,5 +1,4 @@
 import Task_2
-from random import choice
 import unittest
 from unittest.mock import patch
 from io import StringIO
