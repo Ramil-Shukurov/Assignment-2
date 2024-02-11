@@ -5,11 +5,11 @@ from io import StringIO
 
 class TestMainFunction(unittest.TestCase):
 
-    @patch('builtins.input', side_effect = ['295'])
+    @patch('builtins.input', side_effect = ['425'])
     def test_main_input_calls(self, mock_input):
         Task_3.main()
         expected_calls = ["Enter the wavelength in nm: "]
-        self.assertEqual(mock_input.call_agrs_list, [unittest.mock.call(arg) for arg in expected_calls])
+        self.assertEqual(mock_input.call_args_list, [unittest.mock.call(arg) for arg in expected_calls])
 
     def test_invalid_input(self):
         test_cases = [
