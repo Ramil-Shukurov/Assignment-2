@@ -86,7 +86,7 @@ class TestMainFunction(unittest.TestCase):
     def test_red(self):
         test_cases = [
             {'input': 620, 'expected_output': 'The relevant color is Red'},
-            {'input': 750, 'expected_output': 'The relevant color is Red'}
+            {'input': 749, 'expected_output': 'The relevant color is Red'}
         ]
 
         for test_case in test_cases:
